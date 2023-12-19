@@ -1,7 +1,7 @@
 import './AddTodo.css';
 
-export const AddTodo = ({addTodoBtn}) => (
+export const AddTodo = (props) => (
     <div className='add-todo-btn'>
-        <button>{addTodoBtn}</button>
+        <button>{props.btn}</button>
     </div>
 )

@@ -1,21 +1,21 @@
 import { useState } from 'react'
 import './App.css';
-import { AddNewTodo } from './components/AddNewTodo/AddNewTodo';
+import { Main } from './components/AddNewTodo/Main';
 
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [allTodo, setAllTodo] = useState([]);
 
   const addTodo = (newTodo) => {
 
-    console.log('newTodo', newTodo)
+    console.log('newTodo', newTodo);
     
-    setTodos([...todos, newTodo]);
+    setAllTodo([...allTodo, newTodo]);
     }
 
     return (
       <div className='app'>
-        <AddNewTodo allTodo={todos} addTodo={addTodo}/>
+        <Main allTodo={allTodo} addTodo={addTodo}/>
       </div>
   )
 }
