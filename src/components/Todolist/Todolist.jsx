@@ -1,17 +1,15 @@
 import './Todolist.css';
-import { Todo } from '../Todo/Todo';
-import App from '../../App';
 
-
-export const Todolist = ({allTodo}) => {
-    console.log('allTodo', allTodo);
+export const Todolist = ({list}) => {
     return (
     <div className='todo-list'>
-        {allTodo.map((value) => {
-            return <Todo value={value}/>
-            })}
+        <ul>
+            {list.map((entry, index) => (
+                <li key={index}>{entry}</li>
+            ))} 
+        </ul>
     </div>
-)
+    )
 }
 
 

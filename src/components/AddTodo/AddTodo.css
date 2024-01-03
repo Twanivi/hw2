@@ -1,3 +1,26 @@
+.add-todo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-todo-input {
+    width: 80%;
+}
+
+.add-todo-input input{
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 20px;
+    font-family: Tahoma;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgb(3, 217, 245);
+    outline-style: none;
+    background: lightcyan;
+    color: rgb(3, 3, 75);
+}
 .add-todo-btn{
     width: 25%;
 }

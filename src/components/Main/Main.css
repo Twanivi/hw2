@@ -1,8 +1,0 @@
-.add-new-todo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 40px;
-    padding: 50px 0;
-}
